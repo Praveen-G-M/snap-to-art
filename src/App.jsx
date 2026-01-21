@@ -2,6 +2,12 @@ import React from 'react'
 import Main_Logo1 from './images/Main_Logo.png'
 import NavbarVideo from './images/BG_video.mp4'
 import { useRef, useState } from "react";
+import pencil_sketch from './images/pencil-sketch.jpg'
+import acrylic_painting from './images/acrylic-painting.jpg'
+import charcoal_drawing from './images/charcoal-drawing.jpg'
+import colored_pencil from './images/colored-pencil.jpg'
+import watercolor from './images/watercolor.jpg'
+import oil_painting from './images/oil-painting.jpg'
 
 const FaqItem = ({ question, answer }) => {
   const [open, setOpen] = useState(false);
@@ -99,7 +105,7 @@ const onTouchMove = (e) => {
       href="#"
       className="flex items-center gap-2 cursor-pointer hover:scale-105 transition-transform"
     >
-      <img src={new URL('./images/Main_Logo.png', import.meta.url).href} className="w-10 sm:w-14 rounded-md" />
+      <img src={Main_Logo1} className="w-10 sm:w-14 rounded-md" />
       <span className="text-xl sm:text-[25px] font-bold text-violet-800 flex">
         SnapTo<span className="text-orange-400">Art</span>
       </span>
@@ -224,7 +230,7 @@ From Photo to Masterpiece, we bring your vision to life on canvas.</p>
                       transition-transform duration-300 ease-out 
                       hover:scale-[1.04] hover:shadow-xl cursor-pointer">
         <img
-          src="/src/images/products/oil-painting.jpg"
+          src={oil_painting}
           alt="Oil Painting"
           className="w-full h-[310px] object-cover"
         />
@@ -241,7 +247,7 @@ From Photo to Masterpiece, we bring your vision to life on canvas.</p>
                       transition-transform duration-300 ease-out 
                       hover:scale-[1.04] hover:shadow-xl cursor-pointer">
         <img
-          src="/src/images/products/pencil-sketch.jpg"
+          src={pencil_sketch}
           alt="Pencil Sketch"
           className="w-full h-[310px] object-cover"
         />
@@ -257,7 +263,7 @@ From Photo to Masterpiece, we bring your vision to life on canvas.</p>
                       transition-transform duration-300 ease-out 
                       hover:scale-[1.04] hover:shadow-xl cursor-pointer">
         <img
-          src="/src/images/products/watercolor.jpg"
+          src={watercolor}
           alt="Watercolor"
           className="w-full h-[310px] object-cover"
         />
@@ -273,7 +279,7 @@ From Photo to Masterpiece, we bring your vision to life on canvas.</p>
                       transition-transform duration-300 ease-out 
                       hover:scale-[1.04] hover:shadow-xl cursor-pointer">
         <img
-          src="/src/images/products/colored-pencil.jpg"
+          src={colored_pencil}
           alt="Colored Pencil"
           className="w-full h-[310px] object-cover"
         />
@@ -289,7 +295,7 @@ From Photo to Masterpiece, we bring your vision to life on canvas.</p>
                       transition-transform duration-300 ease-out 
                       hover:scale-[1.04] hover:shadow-xl cursor-pointer">
         <img
-          src="/src/images/products/acrylic-painting.jpg"
+          src={acrylic_painting}
           alt="Acrylic Painting"
           className="w-full h-[310px] object-cover"
         />
@@ -305,7 +311,7 @@ From Photo to Masterpiece, we bring your vision to life on canvas.</p>
                       transition-transform duration-300 ease-out 
                       hover:scale-[1.04] hover:shadow-xl cursor-pointer">
         <img
-          src="/src/images/products/charcoal-drawing.jpg"
+          src={charcoal_drawing}
           alt="Charcoal Drawing"
           className="w-full h-[310px] object-cover"
         />

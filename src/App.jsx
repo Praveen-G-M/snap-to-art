@@ -8,6 +8,15 @@ import charcoal_drawing from './images/charcoal-drawing.jpg'
 import colored_pencil from './images/colored-pencil.jpg'
 import watercolor from './images/watercolor.jpg'
 import oil_painting from './images/oil-painting.jpg'
+import upload_img from './images/upload_img.png'
+import check_mark from './images/check_mark.jpg'
+import paint_brush from './images/paint_brush.jpg'
+import fast_delivery from './images/fast_delivery.jpg'
+import fb_image from './images/fb_image.png'
+import insta_image from './images/insta_image.png'
+import linkedin_img from './images/linkedin_img.png'
+import x_image from './images/x_image.png'
+
 
 const FaqItem = ({ question, answer }) => {
   const [open, setOpen] = useState(false);
@@ -343,7 +352,7 @@ From Photo to Masterpiece, we bring your vision to life on canvas.</p>
       {/* Step 1 */}
       <div className="p-4 sm:p-6 rounded-2xl transition-transform duration-300 hover:scale-[1.05] hover:shadow-2xl border-1">
         <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full ">
-          <img src="./src/images/upload_img.png"/>
+          <img src={upload_img} />
         </div>
         <h3 className="text-lg font-semibold mb-2">Upload Your Photo</h3>
         <p className="text-sm text-gray-600">
@@ -355,7 +364,7 @@ From Photo to Masterpiece, we bring your vision to life on canvas.</p>
       {/* Step 2 */}
       <div className="p-4 sm:p-6 rounded-2xl transition-transform duration-300 hover:scale-[1.05] hover:shadow-2xl border-1">
         <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 text-2xl font-bold">
-          <img src="./src/images/check_mark.jpg" />
+          <img src={check_mark} />
         </div>
         <h3 className="text-lg font-semibold mb-2">Select Art Style</h3>
         <p className="text-sm text-gray-600">
@@ -366,7 +375,7 @@ From Photo to Masterpiece, we bring your vision to life on canvas.</p>
       {/* Step 3 */}
       <div className="p-4 sm:p-6 rounded-2xl transition-transform duration-300 hover:scale-[1.05] hover:shadow-2xl border-1">
         <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 text-2xl font-bold">
-          <img src="./src/images/paint_brush.jpg" />
+            <img src={paint_brush} />
         </div>
         <h3 className="text-lg font-semibold mb-2">Artist Creation</h3>
         <p className="text-sm text-gray-600">
@@ -377,7 +386,7 @@ From Photo to Masterpiece, we bring your vision to life on canvas.</p>
       {/* Step 4 */}
       <div className="p-4 sm:p-6 rounded-2xl transition-transform duration-300 hover:scale-[1.05] hover:shadow-2xl border-1">
         <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 text-2xl font-bold">
-          <img src="./src/images/fast_delivery.jpg" />
+          <img src={fast_delivery} />
         </div>
         <h3 className="text-lg font-semibold mb-2">Delivered to You</h3>
         <p className="text-sm text-gray-600">
@@ -573,10 +582,10 @@ From Photo to Masterpiece, we turn your moments into timeless art.</p>
 
       {/* Social Icons */}
       <div className="flex gap-6 text-blue-600 ml-1 ">
-        <a href="#" className="hover:bg-blue-500 h-5 w-5 hover:scale-110 transition-transform"><img src="./src/images/fb_image.png"/></a>
-        <a href="#" className="hover:bg-orange-300 h-5 w-5 hover:scale-110 transition-transform"><img src="./src/images/insta_image.png"/></a>
-        <a href="#" className="h-5 w-5 hover:scale-110 transition-transform"><img src="./src/images/x_image.png"/></a>
-        <a href="#" className="hover:bg-blue-500 h-5 w-5 hover:scale-110 transition-transform"><img src="./src/images/linkedin-img.png"/></a>
+        <a href="#" className="hover:bg-blue-500 h-5 w-5 hover:scale-110 transition-transform"><img src={fb_image}/></a>
+        <a href="#" className="hover:bg-orange-300 h-5 w-5 hover:scale-110 transition-transform"><img src={insta_image}/></a>
+        <a href="#" className="h-5 w-5 hover:scale-110 transition-transform"><img src={x_image}/></a>
+        <a href="#" className="hover:bg-blue-500 h-5 w-5 hover:scale-110 transition-transform"><img src={linkedin_img}/></a>
       </div>
     </div>
 

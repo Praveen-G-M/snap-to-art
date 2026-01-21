@@ -99,7 +99,7 @@ const onTouchMove = (e) => {
       href="#"
       className="flex items-center gap-2 cursor-pointer hover:scale-105 transition-transform"
     >
-      <img src={Main_Logo1} className="w-10 sm:w-14 rounded-md" />
+      <img src={new URL('./images/Main_Logo.png', import.meta.url).href} className="w-10 sm:w-14 rounded-md" />
       <span className="text-xl sm:text-[25px] font-bold text-violet-800 flex">
         SnapTo<span className="text-orange-400">Art</span>
       </span>

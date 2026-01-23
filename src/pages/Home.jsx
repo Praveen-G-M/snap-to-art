@@ -125,7 +125,7 @@ const onTouchMove = (e) => {
     </a>
 
     {/* DESKTOP MENU */}
-    <ul className="hidden md:flex gap-6 font-bold">
+    <ul className="hidden md:flex gap-10 font-bold">
       {["products", "how-it-works", "why-us", "faqs", "contact"].map((id) => (
         <li key={id}>
           <button
@@ -144,7 +144,7 @@ const onTouchMove = (e) => {
 >
         Sign In
       </button>
-      <button onClick={() => navigate("/login")}
+        <button onClick={() => navigate("/signup")}
  className="bg-white hover:bg-gray-200 text-blue-900 font-bold py-1 px-3 rounded border">
         Get Started
       </button>
